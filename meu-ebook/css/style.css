@@ -1,0 +1,98 @@
+html {
+      scroll-behavior: smooth; /* scroll suave */
+    }
+
+    /* ---------- CORES PERSONALIZADAS ---------- */
+    .bg-brown {
+      background-color: #16486a !important;
+    }
+
+    .bg-gray {
+      background-color: #b9c6ea3d !important;
+      border: #ffffff !important;
+      color: #ffffffc0 !important;
+    }
+
+    /* ---------- HERO / CAPA ---------- */
+    .hero-section {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+
+    .titulo-capa {
+      font-family: 'Poppins', sans-serif;
+      font-size: 5rem;
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    .subtitulo-capa {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #ffffffdd;
+    }
+
+    /* ---------- SEÇÕES ---------- */
+    .section {
+      padding: 60px 20px;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s ease;
+    }
+
+    .section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ---------- CARTÕES ---------- */
+    .card img {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    /* ---------- TEXTO E UTILITÁRIOS ---------- */
+    .white {
+      color: azure;
+      font-family: 'Lato', sans-serif;
+    }
+
+    .font-btn {
+      font-family: 'Poppins', sans-serif !important;
+    }
+
+    .rad10 {
+      border-radius: 45px !important;
+    }
+
+    /* ---------- RESPONSIVIDADE ---------- */
+    @media (max-width: 991.98px) {
+      .navbar-brand {
+        font-size: 0.95rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero-section {
+        height: auto;
+        padding: 100px 20px;
+      }
+
+      .titulo-capa {
+        font-size: 2.5rem;
+      }
+
+      .subtitulo-capa {
+        font-size: 1rem;
+      }
+
+      .card img {
+        height: 150px;
+      }
+    }
